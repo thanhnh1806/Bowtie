@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bowtie.View.ProfileCardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9f9f9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1155">
+
+            <com.dd.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="@android:color/white"
+                app:sl_cornerRadius="10dp"
+                app:sl_shadowColor="@color/shadow_color"
+                app:sl_shadowRadius="@dimen/shadow_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_background_white_border_radius"
+                    android:orientation="vertical"
+                    android:weightSum="830">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_162sdp"
+                        android:background="@drawable/rectangle_background_border_radius_top">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            fresco:placeholderImage="@drawable/profile_cards_user_avatar"
+                            fresco:roundBottomLeft="false"
+                            fresco:roundBottomRight="false"
+                            fresco:roundedCornerRadius="14dp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_background_white_border_radius_bottom"
+                        android:orientation="vertical"
+                        android:weightSum="392">
+
+                        <FrameLayout
+                            android:id="@+id/btnName"
+                            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_55sdp"
+                            android:background="@android:color/white">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text="Richard Murphy"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="19.5sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvPosition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="Business Development Manager"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="13.5sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="4dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icon_more_vert" />
+
+                                <ImageView
+                                    android:layout_width="3.44dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_more_vert_black_24dp"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/line_height"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@android:color/white">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/line_height"
+                                android:background="@color/dividers" />
+                        </FrameLayout>
+
+                        <include layout="@layout/logo_bottom" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.dd.ShadowLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="230dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFind"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle_background_pink_border_radius"
+                        android:gravity="center"
+                        android:text="FIND CONTACTS"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_81sdp"
+    android:background="@drawable/rectangle_background_white_border_radius_bottom"
+    android:paddingLeft="@dimen/_17sdp"
+    android:paddingRight="@dimen/_17sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/trai_tim" />
+
+    <ImageView
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_49sdp"
+        android:src="@drawable/tin_nhan" />
+</FrameLayout>

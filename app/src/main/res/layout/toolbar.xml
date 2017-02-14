@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/toolbarEdit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#0097a7"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/btnBack"
+            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="56dp"
+            android:gravity="center_vertical"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/btnCheck"
+            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_check_white_24dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e5">
+
+        <FrameLayout
+            android:id="@+id/ivToolBarMenu"
+            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_menu" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="56dp"
+            android:gravity="center_vertical"
+            android:text="Profile Card"
+            android:textColor="#90a3ae"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/btnEdit"
+            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/but_chi" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="56dp"
+            android:background="@drawable/appbar_bowtie_active"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp">
+
+            <FrameLayout
+                android:id="@+id/btnNoti"
+                style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.6"
+                    android:src="@drawable/icon_a_star" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btnContact"
+                style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="0.6"
+                    android:src="@drawable/ic_perm_contact_calendar_black_24dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
